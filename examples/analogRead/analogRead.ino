@@ -1,6 +1,4 @@
-//
-//
-//
+
 #include <Wire.h>
 #include "PCF8591.h"
 
@@ -10,7 +8,7 @@ PCF8591 pcf;
 void setup ()
 {
 	Serial.begin (9600);
-	pcf.begin (0);
+	pcf.begin (0);				//adress config using A0,A1,A2 from the PCF8591 IC
 }
 
 void loop ()
